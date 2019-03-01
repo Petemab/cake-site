@@ -104,7 +104,7 @@ a:hover
 
 
 .galleryContainer {
-  height: calc(100vh);
+
   background-image: linear-gradient(#d1bfd3, #dcccdd, #e6dae8, #f1e7f2, #fcf5fd);
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -124,11 +124,15 @@ a:hover
 .galleryItem {
   /* background: rgba(255, 255, 255, 0.2); */
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  padding: 20px;
+  padding: 10px;
   display: grid;
-  grid-template-columns: 150px 1fr;
+  grid-template-columns: 1fr;
   grid-gap: 10px;
   align-items: center;
   color: white;
-  font-weight: 100;
+}
+
+.galleryImg {
+  max-width:100%;
+  max-height:100%;
 }
