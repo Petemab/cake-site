@@ -1,0 +1,46 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/Cellar/yarn/1.10.1/libexec/bin/yarn.js
+
+PATH: 
+  /Users/pbennett/.rvm/gems/ruby-2.4.1/bin:/Users/pbennett/.rvm/gems/ruby-2.4.1@global/bin:/Users/pbennett/.rvm/rubies/ruby-2.4.1/bin:/Users/pbennett/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/pbennett/Library/Android/sdk/tools:/Users/pbennett/Library/Android/sdk/tools/bin:/Users/pbennett/Library/Android/sdk/platform-tools:/Users/pbennett/Library/Android/sdk/emulator:/Users/pbennett/.rvm/bin
+
+Yarn version: 
+  1.10.1
+
+Node version: 
+  8.12.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /Users/pbennett/development/cake-site/package.json: Unexpected token } in JSON at position 123
+      at JSON.parse (<anonymous>)
+      at /usr/local/Cellar/yarn/1.10.1/libexec/lib/cli.js:1136:59
+      at Generator.next (<anonymous>)
+      at step (/usr/local/Cellar/yarn/1.10.1/libexec/lib/cli.js:98:30)
+      at /usr/local/Cellar/yarn/1.10.1/libexec/lib/cli.js:109:13
+      at <anonymous>
+
+npm manifest: 
+  {
+  "name": "cake-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "run-script-os",
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.24.5",
+    "run-script-os": "^1.0.3",
+  },
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

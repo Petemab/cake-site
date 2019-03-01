@@ -1,0 +1,134 @@
+html {
+  /* background: url("./assets/hamiltons_logo_jpeg.jpg") no-repeat  center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; */
+}
+
+:root {
+  --title-font: 'Questrial', serif;
+  --text-font: 'Montserrat', sans-serif;
+}
+
+.navContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  background: linear-gradient(#ffeeec, #ffffff);
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbarItem {
+  justify-self: center;
+  align-self: center;
+  font-family: var(--title-font);
+  font-size: 20px;
+  color: #898989;
+  font-weight: 200;
+
+}
+
+a { color: inherit;
+  text-decoration: none;
+}
+
+a:hover
+{
+     color:#00A0C6;
+     text-decoration:none;
+     cursor:pointer;
+}
+
+.homePage {
+  height: calc(100vh);
+  background: url("./assets/hamiltons_logo_jpeg.jpg") no-repeat  center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.infoPage {
+  height: calc(100vh);
+  width: 100%;
+  background: linear-gradient(#ffeeec, #eae2e1);
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "sidebar-1 content"
+}
+
+.sidebar-1 {
+  margin: 50px;
+  grid-area: sidebar-1;
+  justify-self: center;
+  align-self: center;
+
+}
+
+.infoImg {
+  height: calc(100vh - 150px);
+}
+
+.content {
+  margin: 50px;
+  display: grid;
+  grid-area: content;
+  grid-template-rows:repeat(1fr 1fr, minmax(300px, 1fr))
+}
+.content-1 {
+  margin: 50px;
+  font-family: var(--title-font);
+  font-size: 50px;
+  color: #898989;
+  justify-self: center;
+  align-self: center;
+
+}
+
+.content-2 {
+  margin:50px;
+  font-family: var(--text-font);
+  font-size: 15px;
+  color: #898989;
+}
+
+/* .galleryTitleContainer {
+  display: grid;
+  grid-template-columns: repeat(1fr 1fr, minmax(300px, 1fr))
+} */
+
+
+
+.galleryContainer {
+  height: calc(100vh);
+  background-image: linear-gradient(#d1bfd3, #dcccdd, #e6dae8, #f1e7f2, #fcf5fd);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+
+.galleryTitle {
+  font-family: var(--title-font);
+  font-size: 50px;
+  color: #898989;
+  justify-self: center;
+  align-self: center;
+  grid-column: 1 / -1;
+}
+
+
+.galleryItem {
+  /* background: rgba(255, 255, 255, 0.2); */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  grid-gap: 10px;
+  align-items: center;
+  color: white;
+  font-weight: 100;
+}
